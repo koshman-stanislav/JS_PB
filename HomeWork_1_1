@@ -1,0 +1,6 @@
+var result = (a + b < 4) ? true : false;
+if(result){
+console.log ('min');
+} else {
+console.log('max');
+}

@@ -1,1 +1,12 @@
-
+function f() {
+    var result = 0;
+    for (i = 0; i < arguments.length; i++) {
+        if (typeof (arguments[i])  === 'number') {
+        result = (arguments[0] - arguments[1]) /arguments[2] ;  
+        } else {
+            throw new Error ( 'Error: parametr type is not a number' )
+        }
+    }
+    return result;
+}
+f(100,50,2)

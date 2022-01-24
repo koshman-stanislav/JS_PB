@@ -1,1 +1,19 @@
+function getDivisors(num) {
+        if (typeof num  === 'number') {
+	        if (num > 0) {
+		    var arr = [];
+	        for (var i = 1; i <= num; i++) {
+		        if (num % i == 0) {
+			    arr.push(i);
+		        }    
+	        }
+	console.log(arr);
+	        } else {
+		     throw new Error ( 'Error: parameter can t be a 0' )
+            }
+         }else {
+            throw new Error ( 'Error: parameter type is not a Number' )
+         }
+ }
 
+getDivisors(100);

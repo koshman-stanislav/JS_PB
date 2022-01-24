@@ -1,1 +1,14 @@
-
+var f = function rec(arr) {
+    for (var i = 0; i < arguments.length; i++) {
+        if (typeof (arr[i])  === 'number') {
+	        console.log(arr[0]);
+	        arr.splice(0, 1);
+	        if (arr.length > 0) {
+                rec(arr);
+	        }
+        }else {
+            throw new Error ( 'Error: parameter type is not a Number' )
+         }
+    }
+}
+f([1, 2, 3,6,8,9,4,5]);

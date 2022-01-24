@@ -1,7 +1,8 @@
 var f = function(num){
   if(typeof num=== 'number'){
       console.log(num*num*num);
-  }else{console.log('is t not a number');
+  }else{
+         throw new Error('is t not a number');
       }
   }
 f('3')
